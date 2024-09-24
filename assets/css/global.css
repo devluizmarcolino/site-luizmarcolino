@@ -10,11 +10,145 @@
 :root {
   --preto: #09090B;
   --super-preto: #020202;
-  --branco: #E1E1E1;
+  --branco: #e1e1e1;
   --texto-cinza: #6B7280;
-  --azul: #475779;
+  --cor-transparente: #09090985;
+}
+
+.darkmode {
+  --preto: #e1e1e1;
+  --super-preto: #ffffff;
+  --branco: #09090B;
+  --cor-transparente: #e1e1e179;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--preto);
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+ul {
+  list-style: none;
+}
+
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--super-preto);
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: var(--branco);
+  font-weight: 600;
+}
+
+.header-lista {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.header-button svg {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.67rem;
+}
+
+.header-lista-item {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-lista-item a:hover {
+  color: var(--texto-cinza);
+}
+
+.header-lista-item:first-child{
+  margin-right: auto;
+}
+
+.btn-dark-mode-toogle {
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-dark-mode-toogle svg {
+  width: 24px;
+  height: 24px;
+  color: var(--branco);
+}
+
+#btn-dark-mode-toogle svg:last-child {
+  display: none;
+}
+
+.darkmode  #btn-dark-mode-toogle svg:first-child {
+  display: none;
+}
+
+.darkmode #btn-dark-mode-toogle svg:last-child{
+  display: block;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right:0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: var(--cor-transparente);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.header-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .header-button {
+    display: block;
+  }
 }
