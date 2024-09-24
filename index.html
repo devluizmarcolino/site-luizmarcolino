@@ -7,13 +7,13 @@
   <meta name="author" content="Luiz Henrique Marcolino">
 
   <link rel="stylesheet" href="./assets/css/global.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/imgs/favicon.svg" type="image/x-icon">
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
 
   <title>Luiz Marcolino</title>
 </head>
-<body>
+<body onload="changeLanguage('pt-br')">
   <header class="header">
     <a href="#" class="logo"><i class="ri-braces-line"> </i> Luiz Marcolino</a>
     <nav class="header-links">
@@ -39,7 +39,13 @@
       </ul>
     </nav>
   </header>
-  
+
+  <main>
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = {"default_language":"pt","detect_browser_language":true,"languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","float_switcher_open_direction":"right","flag_style":"3d","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+  </main>
+
   <script src="./assets/js/app.js"></script>
 </body>
 </html>
