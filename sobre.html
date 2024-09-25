@@ -12,15 +12,15 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
 
-  <title>Luiz Marcolino | Front-End Developer</title>
+  <title>Luiz Marcolino | Sobre mim</title>
 </head>
 <body>
   <header class="header">
     <a href="#" class="logo"><i class="ri-braces-line"> </i> Luiz Marcolino</a>
     <nav class="header-links">
       <ul class="header-lista">
-        <li class="header-lista-item hideOnMobile"><a href="#inicio">Início</a></li>
-        <li class="header-lista-item hideOnMobile"><a href="sobre.html">Sobre mim</a></li>
+        <li class="header-lista-item hideOnMobile"><a href="index.html">Início</a></li>
+        <li class="header-lista-item hideOnMobile"><a href="#sobre">Sobre mim</a></li>
         <li class="header-lista-item hideOnMobile"><a href="#projetos">Projetos</a></li>
         <li class="header-lista-item hideOnMobile"><a href="#contatos">Contatos</a></li>
         <button class="btn-dark-mode-toogle" id="btn-dark-mode-toogle">
@@ -33,8 +33,8 @@
       
       <ul class="header-lista sidebar">
         <li class="header-button" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 10.5858L14.8284 7.75736L16.2426 9.17157L13.4142 12L16.2426 14.8284L14.8284 16.2426L12 13.4142L9.17157 16.2426L7.75736 14.8284L10.5858 12L7.75736 9.17157L9.17157 7.75736L12 10.5858Z" class="svg"></path></svg></li>
-        <li class="header-lista-item"><a href="#inicio">Início</a></li>
-        <li class="header-lista-item"><a href="sobre.html">Sobre mim</a></li>
+        <li class="header-lista-item"><a href="index.html">Início</a></li>
+        <li class="header-lista-item"><a href="#sobre">Sobre mim</a></li>
         <li class="header-lista-item"><a href="#projetos">Projetos</a></li>
         <li class="header-lista-item"><a href="#contatos">Contatos</a></li>
       </ul>
@@ -42,21 +42,21 @@
   </header>
 
   <main>
-    <section class="home" id="inicio">
-      <div class="conteudo-home">
-        <div class="imagem-home">
-          <img src="./assets/imgs/user-image.svg" alt="Imagem de um boneco gerada por IA" class="animate__animated animate__wobble">
+    <section class="sobre" id="sobre">
+        <div class="sobre-content">
+          <div class="sobre-container">
+            <div class="sobre-img animate__animated animate__fadeInUpBig">
+              <img src="./assets/imgs/Developer activity-bro.svg" alt="Imagem gerada por IA">
+            </div>
+            <div class="sobre-info">
+              <div class="sobre-textos">
+                <h3 class="animate__animated animate__bounce">Luiz Henrique Marcolino</h3>
+                <p class="sobre-paragrafo animate__animated animate__fadeIn"><span>Sou desenvolvedor Front-end</span>, tenho 19 anos e entrei na área da tecnologia há pouco tempo. Atualmente não faço nenhuma faculdade na área, mas possuo várias certificações na área de tecnologia (principalmente front-end) que comprovam meu conhecimento.</p>
+                <p class="animate__animated animate__fadeIn">Além da minha paixão por tecnologia, eu gosto muito de Fórmula 1 e Beach Tennis :p</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="info-home">
-          <h1 class="titulo-home animate__animated animate__slideInLeft">Luiz H. Marcolino</h1>
-          <p class="desc-home animate__animated animate__slideInLeft">Desenvolvedor Front-End</p>
-        </div>
-        <div class="icon-home">
-          <a href="https://github.com/devluizmarcolino" target="_blank" class="animate__animated animate__slideInUp"><i class="ri-github-fill i"></i></a>
-          <a href="https://www.linkedin.com/in/luizhenriquemarcolino" target="_blank" class="animate__animated animate__slideInUp"><i class="ri-linkedin-box-fill i"></i></a>
-          <button class="btn animate__animated animate__slideInUp"><i class="ri-folder-download-line"></i> Baixar currículo</button>
-        </div>
-      </div>
     </section>
   </main>
   <script src="./assets/js/app.js"></script>
