@@ -7,13 +7,15 @@
   <meta name="author" content="Luiz Henrique Marcolino">
 
   <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/imgs/favicon.svg" type="image/x-icon">
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
 
   <title>Luiz Marcolino</title>
 </head>
-<body onload="changeLanguage('pt-br')">
+<body>
   <header class="header">
     <a href="#" class="logo"><i class="ri-braces-line"> </i> Luiz Marcolino</a>
     <nav class="header-links">
@@ -40,12 +42,30 @@
     </nav>
   </header>
 
+<div class="gtranslate_wrapper"></div>
+
   <main>
-    <div class="gtranslate_wrapper"></div>
-    <script>window.gtranslateSettings = {"default_language":"pt","detect_browser_language":true,"languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","float_switcher_open_direction":"right","flag_style":"3d","alt_flags":{"en":"usa","pt":"brazil"}}</script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+    <section class="home" id="inicio">
+      <div class="conteudo-home" data-aos="fade-up">
+        <div class="imagem-home">
+          <img src="./assets/imgs/user-image.svg" alt="Imagem de um boneco gerada por IA" class="animate__animated animate__wobble">
+        </div>
+        <div class="info-home">
+          <h1 class="titulo-home animate__animated animate__slideInLeft">Luiz H. Marcolino</h1>
+          <p class="desc-home animate__animated animate__slideInLeft">Desenvolvedor Front-End</p>
+        </div>
+        <div class="icon-home">
+          <a href="https://github.com/devluizmarcolino" target="_blank" class="animate__animated animate__slideInUp"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/luizhenriquemarcolino" target="_blank" class="animate__animated animate__slideInUp"><i class="ri-linkedin-box-fill"></i></a>
+          <button class="btn animate__animated animate__slideInUp">Download CV</button>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <script src="./assets/js/app.js"></script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
