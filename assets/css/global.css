@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url(./sobre.css);
 
 * {
   margin: 0;
@@ -341,4 +342,70 @@ ul {
     justify-content: left;
   }
 
+}
+
+/* ! skills */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.cards h1 {
+  color: var(--branco);
+  font-size: 1.3rem;
+}
+
+.cards h2 {
+  font-size: 0.9rem;
+}
+
+.card {
+  width: 9.375rem;
+  height: 6.25rem;
+  background-color: var(--cor-principal);
+  border: 2px solid #1e5194;
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0.625rem;
+  cursor: pointer;
+}
+
+
+.card i {
+  font-size: 2.5rem; 
+  margin-bottom: 0.3rem;
+  transition: 0.2s;
+}
+
+
+@media (max-width: 800px) {
+  .card-info {
+    justify-content: left;
+    padding: 0 2rem;
+    margin-top: 0;
+  }
+  
+  .cards-container {
+    justify-content: left;
+    padding: 0 2rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    margin-left: 0;
+  }
 }
