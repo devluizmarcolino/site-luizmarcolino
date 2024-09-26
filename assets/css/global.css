@@ -240,6 +240,10 @@ ul {
   color: var(--branco);
 }
 
+.icon-home .i:hover {
+  color: var(--cor-principal);
+}
+
 /* ! sobre */
 
 .sobre {
