@@ -403,6 +403,8 @@ ul {
     justify-content: left;
     padding: 0 2rem;
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 2(1fr 1fr);
   }
 
   .card {
