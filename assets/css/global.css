@@ -351,7 +351,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .card-info {
@@ -384,7 +384,6 @@ ul {
   cursor: pointer;
 }
 
-
 .card i {
   font-size: 2.5rem; 
   margin-bottom: 0.3rem;
@@ -400,12 +399,17 @@ ul {
   }
   
   .cards-container {
+    display: flex;
     justify-content: left;
     padding: 0 2rem;
-    margin-top: 1rem;
   }
   
   .card {
     margin-left: 0;
+    width: 5rem;
+  }
+
+  .cards h2 {
+    font-size: 0.8rem;
   }
 }
